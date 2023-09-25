@@ -1,0 +1,113 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 5,
+    "passes": 2,
+    "pending": 0,
+    "failures": 3,
+    "start": "2023-09-25T20:52:42.281Z",
+    "end": "2023-09-25T20:52:43.318Z",
+    "duration": 1037
+  },
+  "tests": [
+    {
+      "title": "returns the customerName",
+      "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: Invalid left-hand side in assignment\n    at Context.<anonymous> (test/indexTest.js:4:7)\n    at processImmediate (internal/timers.js:461:21)",
+        "message": "Invalid left-hand side in assignment"
+      }
+    },
+    {
+      "title": "modifies the customerName variable",
+      "fullTitle": "Fix the Scope upperCaseCustomerName() modifies the customerName variable",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: Invalid left-hand side in assignment\n    at Context.<anonymous> (test/indexTest.js:10:7)\n    at processImmediate (internal/timers.js:461:21)",
+        "message": "Invalid left-hand side in assignment"
+      }
+    },
+    {
+      "title": "setBestCustomer",
+      "fullTitle": "Fix the Scope setBestCustomer() setBestCustomer",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "overwrites the best customer",
+      "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'still not bob' to equal 'maybe bob'",
+        "showDiff": true,
+        "actual": "still not bob",
+        "expected": "maybe bob",
+        "stack": "AssertionError: expected 'still not bob' to equal 'maybe bob'\n    at Context.<anonymous> (test/indexTest.js:31:38)\n    at processImmediate (internal/timers.js:461:21)"
+      }
+    },
+    {
+      "title": "unsuccessfully tries to reassign the least favorite customer",
+      "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "returns the customerName",
+      "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: Invalid left-hand side in assignment\n    at Context.<anonymous> (test/indexTest.js:4:7)\n    at processImmediate (internal/timers.js:461:21)",
+        "message": "Invalid left-hand side in assignment"
+      }
+    },
+    {
+      "title": "modifies the customerName variable",
+      "fullTitle": "Fix the Scope upperCaseCustomerName() modifies the customerName variable",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: Invalid left-hand side in assignment\n    at Context.<anonymous> (test/indexTest.js:10:7)\n    at processImmediate (internal/timers.js:461:21)",
+        "message": "Invalid left-hand side in assignment"
+      }
+    },
+    {
+      "title": "overwrites the best customer",
+      "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'still not bob' to equal 'maybe bob'",
+        "showDiff": true,
+        "actual": "still not bob",
+        "expected": "maybe bob",
+        "stack": "AssertionError: expected 'still not bob' to equal 'maybe bob'\n    at Context.<anonymous> (test/indexTest.js:31:38)\n    at processImmediate (internal/timers.js:461:21)"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "setBestCustomer",
+      "fullTitle": "Fix the Scope setBestCustomer() setBestCustomer",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "unsuccessfully tries to reassign the least favorite customer",
+      "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}

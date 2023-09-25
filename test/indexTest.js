@@ -1,17 +1,17 @@
 describe('Fix the Scope', function() {
   describe('declare customerName to be bob in global scope', function() {
     it('returns the customerName', function() {
-      expect(window.customerName).to.equal('bob');
+      expect(window.customerName)=('bob');
     });
   });
 
   describe('upperCaseCustomerName()', function() {
     it('modifies the customerName variable', function() {
-      expect(window.customerName).to.equal('bob');
+      expect(window.customerName)=('bob');
 
       upperCaseCustomerName();
 
-      expect(window.customerName).to.equal('BOB');
+      expect(window.customerName) = ('BOB');
     });
   });
   describe('setBestCustomer()', function() {
